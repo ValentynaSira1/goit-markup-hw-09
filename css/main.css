@@ -108,11 +108,21 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: columnn;
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    max-height: 600px;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -120,12 +130,12 @@ ul {
     background-image: url(../images/2x_mobile.jpg);
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 479px) {
   .hero {
     background-image: url(../images/tablet.jpg);
   }
 }
-@media (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 2dppx) {
+@media (min-width: 479px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 479px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/2x_tablet.jpg);
   }
@@ -832,6 +842,13 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .portfolio-item {
   display: -webkit-box;
@@ -1093,8 +1110,6 @@ ul {
   .features__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 @media (min-width: 1200px) {

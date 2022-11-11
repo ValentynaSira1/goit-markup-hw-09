@@ -9,12 +9,20 @@
     url(../images/mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: columnn;
     
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+
+//     @media (min-width: 768px){
+//         height: 400px;
+//     }
+
+//     @media (min-width: 1200px){
+//         max-height: 600px;
+//     }
 }
 
 @media (min-resolution: 2dppx){

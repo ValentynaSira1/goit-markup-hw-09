@@ -1,0 +1,33 @@
+.features{
+    display: flex;
+
+    line-height: 1.71;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}    
+
+.features__wrapper{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.features__title{
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.17;
+
+    margin-bottom: 10px;
+}
+
+.features__text{
+    color: var(--color-secondary);
+}

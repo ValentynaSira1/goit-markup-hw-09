@@ -1,12 +1,23 @@
 .clients{
     display: flex;
     gap: 30px;
-
-    &__item{
-        width:170px;
-        height: 92px;
-    }
+    flex-wrap: wrap;
+   
 }
+
+.clients__item{
+    width:210px;
+    height: 92px;
+
+    @media (min-width: 768px){
+        width: 226px;
+    }
+
+    @media (min-width: 1200px){
+        width: 170px;
+    }
+        
+}    
 
 
 

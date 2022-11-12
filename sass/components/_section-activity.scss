@@ -1,9 +1,16 @@
 .section.activity{
     padding-top: 0;
-    }
+
+    @media screen and (max-width: 1199px) { 
+        display: none; 
+    } 
+}
     
     .work{
-        display: flex;
+        display: block;
+        @media (min-width: 768px){
+            display: flex;
+        }
     }
     
     .work__item{

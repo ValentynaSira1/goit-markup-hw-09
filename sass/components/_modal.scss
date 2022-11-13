@@ -70,6 +70,7 @@
 }
 
 
+
 .modal__text{
     font-weight: 700;
     font-size: 20px;
@@ -135,26 +136,24 @@
 
 
 .checkbox{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 100%;
 
     position: relative;
     flex-direction: column;
-    margin-bottom: 10px;
 
     &:focus-within .modal__icon{ 
         fill: var(--color-brend); 
     }
+
 }
-
-
 
 .checkbox__label{
     position: relative;
     padding-left: 28px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--color-secondary);
 
@@ -170,6 +169,11 @@
         position: absolute;
         align-items: center;
         justify-content: center;
+    }
+
+    @media (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.71;
     }
 }
 
@@ -191,7 +195,7 @@
 .checkbox__input:checked~.checkbox__icon{ 
     position: absolute;
     opacity: 1; 
-    left: 20px;
+    left: 10px;
     top: 3px;
     align-items: center;
     justify-content: center;

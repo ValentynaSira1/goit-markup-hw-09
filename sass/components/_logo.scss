@@ -17,6 +17,10 @@
   @extend %logo;
   color: var(--color-accent);
   margin-bottom: 20px;
+
+  @media (max-width: 1199px){
+    justify-content: center;
+}
 }
 
 .logo__text{

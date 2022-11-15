@@ -1,6 +1,6 @@
 .hero { 
     text-align: center; 
-    // padding: 200px 0; 
+    padding: 0; 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
   rgba(47, 48, 58, 0.4)), 
     url(../images/mobile.jpg); 
@@ -8,25 +8,30 @@
     background-size: cover; 
     background-position: center; 
     max-width: 1600px; 
-    height: 600px; 
     margin-left: auto; 
     margin-right: auto; 
 }
 
 @media (min-resolution: 2dppx){
     .hero{
-        background-image: url(../images/2x_mobile.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), 
+        url(../images/2x_mobile.jpg);
     }
 }
 
 @media (min-width: 768px){
     .hero{
-        background-image: url(../images/tablet.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url(../images/tablet.jpg);
     }
 
     @media (min-resolution: 2dppx){
         .hero{
-            background-image: url(../images/2x_tablet.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)),
+            url(../images/2x_tablet.jpg);
         }
     }
 }
@@ -34,16 +39,29 @@
 
 @media (min-width: 1200px){
     .hero{
-        background-image: url(../images/desctop.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)),
+        url(../images/desctop.jpg);
     }
 
     @media (min-resolution: 2dppx){
         .hero{
-            background-image: url(../images/2x_desctop.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)),
+            url(../images/2x_desctop.jpg);
         }
     }
 }
 
+.hero__container{
+    padding-top: 88px;
+    padding-bottom: 88px;
+
+    @media (min-width: 1200px){
+         padding-top: 170px;
+         padding-bottom: 170px;
+    }
+}
 
 .hero__caption { 
     color: var(--color-accent); 
@@ -57,7 +75,6 @@
    
     width: 360px; 
     margin-bottom: 30px; 
-    margin-top: 118px; 
     margin-left: auto; 
     margin-right: auto; 
    
@@ -65,6 +82,5 @@
       font-size: 44px; 
       line-height: 1.36; 
       width: 696px; 
-      margin-top: 200px; 
     } 
   }

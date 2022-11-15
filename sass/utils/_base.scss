@@ -3,6 +3,13 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 0.03em;
+
+    padding-top: 60px;
+
+    @media (min-width: 768px){
+        padding-top: 80px;
+    }
 }
 
 li {

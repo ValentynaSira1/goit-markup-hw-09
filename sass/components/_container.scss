@@ -1,6 +1,16 @@
 .container {
+    min-width: 320px;
     max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+
+    @media (min-width: 768px){
+        width: 768px;
+    }
+
+    @media (min-width: 1200px){
+        width: 1200px;
+    }
 }

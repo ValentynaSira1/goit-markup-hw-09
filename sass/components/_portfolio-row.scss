@@ -1,7 +1,18 @@
 .row{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+   
+    @media (min-width: 768px){
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 50px;
+    }
 }
 
 .row__items:not(:last-child) {
@@ -22,11 +33,13 @@
     padding-bottom: 6px;
     padding-left: 22px;
     padding-right: 22px;
+    margin-bottom: 15px;
     border-color: transparent;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
     &:hover, 
     &:focus{
@@ -34,4 +47,9 @@
         background-color: #2196f3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+
+    @media (min-width: 768px){
+        margin-bottom: 0;
+    }
+
 }

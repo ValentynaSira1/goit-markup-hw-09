@@ -20,33 +20,33 @@
                     <li class="site-nav__items"><a class="site-nav__link" href="#">Контакти</a></li>
                 </ul>
             </nav>
-                <ul class="auth-nav">
-                    <li class="auth-nav__items">
-                        <a class="auth-nav__link" href="mailto:info@devstudio.com"> 
-                            <svg  class = "auth-nav__icon" width="16" height="12">
+            <ul class="auth-nav">
+                <li class="auth-nav__items">
+                    <a class="auth-nav__link" href="mailto:info@devstudio.com"> 
+                        <svg  class = "auth-nav__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>                          
                         </svg>info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="auth-nav__items">
-                        <a class="auth-nav__link" href="tel:+380961111111">
-                            <svg  class = "auth-nav__icon" width="10" height="16">
-                                <use href="./images/icons.svg#icon-smartphone">
-                                </use>                          
-                            </svg>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="header__button js-open-menu">
-                    <svg 
+                    </a>
+                </li>
+                <li class="auth-nav__items">
+                    <a class="auth-nav__link" href="tel:+380961111111">
+                        <svg  class = "auth-nav__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone">
+                            </use>                          
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+            <button type="button" class="header__button js-open-menu">
+                <svg 
                     width="40" 
                     height="40"
                     aria-label="Переключатель мобільного меню">
-                        <use href="./images/icons.svg#icon-menu">
-                        </use>
-                    </svg>
-                </button>
+                    <use href="./images/icons.svg#icon-menu">
+                    </use>
+                </svg>
+            </button>
         </div>
         <div class="mobile-menu js-menu-container"> 
             <div class="mobile-menu__container"> 
@@ -55,44 +55,44 @@
                         <use href="./images/icons.svg#icon-close"></use> 
                     </svg> 
                 </button>
-                    <ul class="mobile-menu__list"> 
-                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="./index.html">Студія</a></li> 
-                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li> 
-                        <li class="mobile-menu__items"><a class="mobile-menu__link" href="#">Контакти</a></li> 
+                <ul class="mobile-menu__list"> 
+                    <li class="mobile-menu__items"><a class="mobile-menu__link" href="./index.html">Студія</a></li> 
+                    <li class="mobile-menu__items"><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li> 
+                    <li class="mobile-menu__items"><a class="mobile-menu__link" href="#">Контакти</a></li> 
+                </ul>
+                <div class="mobile-menu__contacts">
+                    <ul class="mobile-menu__auth-nav">
+                        <li class="mobile-menu__auth-nav-items"> 
+                            <a class="mobile-menu__auth-nav-link" href="tel:+380961111111"> 
+                                +38 096 111 11 11 
+                            </a> 
+                        </li>
+                        <li class="mobile-menu__auth-nav-items"> 
+                            <a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com"> 
+                                info@devstudio.com 
+                            </a> 
+                        </li>  
                     </ul>
-                    <div class="mobile-menu__contacts">
-                        <ul class="mobile-menu__auth-nav">
-                            <li class="mobile-menu__auth-nav-items"> 
-                                <a class="mobile-menu__auth-nav-link" href="tel:+380961111111"> 
-                                 +38 096 111 11 11 
-                                </a> 
-                            </li>
-    
-                            <li class="mobile-menu__auth-nav-items"> 
-                                <a class="mobile-menu__auth-nav-link" href="mailto:info@devstudio.com"> 
-                                    info@devstudio.com 
-                                </a> 
-                            </li>  
-                        </ul>
-                        <ul class="mobile-menu__social">
-                            <li class="mobile-menu__social-items">
-                                <a class="mobile-menu__social-link" href="#"> Instagram 
-                                    <span class="mobile-menu__symbol"></span></a> 
-                            </li>
-                            <li class="mobile-menu__social-items">
-                                <a class="mobile-menu__social-link" href="#">Twitter 
-                                    <span class="mobile-menu__symbol"></span></a>
-                            </li>
-                            <li class="mobile-menu__social-items">
-                                <a class="mobile-menu__social-link" href="#">Facebook 
-                                    <span class="mobile-menu__symbol"></span></a>
-                            </li>
-                            <li class="mobile-menu__social-items">
-                                <a class="mobile-menu__social-link" href="#">LinkedIn</a>
-                            </li>
-                        </ul> 
-                    </div> 
+                    <ul class="mobile-menu__social">
+                        <li class="mobile-menu__social-items">
+                            <a class="mobile-menu__social-link" href="#"> Instagram 
+                                <span class="mobile-menu__symbol"></span></a> 
+                        </li>
+                        <li class="mobile-menu__social-items">
+                            <a class="mobile-menu__social-link" href="#">Twitter 
+                                <span class="mobile-menu__symbol"></span></a>
+                        </li>
+                        <li class="mobile-menu__social-items">
+                            <a class="mobile-menu__social-link" href="#">Facebook 
+                                <span class="mobile-menu__symbol"></span></a>
+                        </li>
+                        <li class="mobile-menu__social-items">
+                            <a class="mobile-menu__social-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul> 
+                </div> 
             </div>
+         </div>
     </header>
     <main>
         <section class="section hero">
@@ -142,7 +142,7 @@
                                 <label for="comment" class="modal__label">Коментар</label>
                                 <textarea name="comment" id="comment" placeholder="Введіть текст" class="modal__textarea"></textarea>
                             </div>
-                            <div class="modal__field form-field">
+                            <div class="modal__field checkbox">
                                 <input type="checkbox" id="modal-checkbox" name="modal-checkbox" class="checkbox__input visually-hidden">
                                 <label for="modal-checkbox" class="checkbox__label">Погоджуюся з розсилкою та приймаю 
                                     <a href="#" class="checkbox__link">Умови договору</a>
@@ -250,7 +250,7 @@
                         ./images/igor_desctop.jpg 270w"
                         src="./igor_mobile.jpg" 
                         alt="Фото Ігоря Дем'яненко" 
-                        sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw">
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
                         <div class="team__wrapper">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -295,7 +295,7 @@
                         ./images/olga_desctop.jpg 270w"       
                         src="./olga_mobile.jpg" 
                         alt="Фото Ольги Рєпіної" 
-                        sizes=" (min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw">
+                        sizes="(min-width: 1200px) 270px,(min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
                         <div class="team__wrapper">
                             <h3 class="team__name">Ольга Рєпіна</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -340,7 +340,7 @@
                         ./images/mikola_desctop.jpg 270w"       
                         src="./mikola_mobile.jpg" 
                         alt="Фото Фото Миколи Тарасова" 
-                        sizes=" (min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw">
+                        sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
                         <div class="team__wrapper">
                             <h3 class="team__name">Микола Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -385,7 +385,7 @@
                         ./images/miha_desctop.jpg 270w"       
                         src="./miha_mobile.jpg" 
                         alt="Фото Фото Михайла Єрмакова" 
-                        sizes=" (min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw">
+                        sizes=" (min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw">
                         <div class="team__wrapper">
                             <h3 class="team__name">Михайло Єрмаков</h3>
                             <p class="team__text" lang="en">UI Designer</p>
@@ -532,17 +532,16 @@
             </div>
             <div class="footer-wrap">
                 <p class="footer-wrap__text">Підпишіться на розсилку</p>
-                <form action="" class="footer-wrap__form">
+                <form class="footer-wrap__form">
                     <label for="mail"></label>
                     <input type="email" name="mail" id="mail" placeholder="E-mail" class="footer-wrap__input">
                     <button type="submit" class="buttons btn  container">Підписатися
-                    <svg class="btn__icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
+                        <svg class="btn__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
                 </form>
             </div>
-            
         </div> 
     </footer>
     <script src="./js/modal.js"></script> 

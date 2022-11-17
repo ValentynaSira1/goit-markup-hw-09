@@ -9,12 +9,15 @@
 }
 
 .benefits{
-    width: 450px;
-    margin-right: 30px;
     margin-bottom: 30px;
+
+    @media (min-width: 480px){
+        width: 450px;
+    }
 
     @media (min-width: 768px){
         width: 354px;
+        margin-right: 30px;
     }
 
     @media screen and (max-width:1199px) { 
@@ -39,8 +42,6 @@
     }
     
 }
-
-
 
 .benefits__box{
     display: flex;

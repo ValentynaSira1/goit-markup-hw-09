@@ -19,11 +19,13 @@
     display: flex;
 }
 
-.features__item{
 
+.features__item{
+    padding-bottom: 30px;
     @media (min-width: 768px){
         flex-basis: calc((100% - 4 * 15px) / 2);
         margin: 15px;
+        padding-bottom: 0;
     }
 
     @media (min-width: 1200px){
@@ -31,6 +33,11 @@
         margin: 15px;
     }
 }
+
+.features__item--size{
+    padding-bottom: 0;
+}
+
 
 .features__title{
     font-size: 14px;
